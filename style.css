@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 1cm;
+}
+
+p.my_descr {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 7mm;
+    text-align: justify;
+}
+
+p.contact_link {
+    text-align: center;
+}
+
+p.contact_logos {
+    text-align: center;
+    font-size: x-large;
+}
+
+p.project {
+    margin-left: 5mm;
+}
+
+p.project_type {
+    margin-top: -2mm;
+}
+
+p.project_descr {
+    margin-top: -2mm;
+    text-align: justify;
+}
+
+hr.bold {
+    border-top: 4px solid black;
+}
+
+i.fa {
+    color: black;
+}
