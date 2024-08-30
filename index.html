@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<base target="_blank">
 </head>
 
 <body>
@@ -10,34 +11,54 @@
 <br>
 <h1>Valentin Aebi</h1>
 <p class="contact_logos">
-    <a href="https://github.com/ValentinAebi" target="_blank"><i class="fa fa-github" style="font-size: x-large;" title="GitHub"></i></a>&nbsp;
-    <a href="https://www.linkedin.com/in/valentin-aebi" target="_blank"><i class="fa fa-linkedin" title="Linkedin"></i></a>&nbsp;
-    <a id="email_logo" target="_blank"><i class="fa fa-envelope" title="E-mail"></i></a>
+    <a href="https://github.com/ValentinAebi"><i class="fa fa-github" style="font-size: x-large;" title="GitHub"></i></a>&nbsp;
+    <a href="https://www.linkedin.com/in/valentin-aebi"><i class="fa fa-linkedin" title="Linkedin"></i></a>&nbsp;
+    <a id="email_logo"><i class="fa fa-envelope" title="E-mail"></i></a>
+</p>
+<p class="table_of_contents">
+    <a href="#Interests" target="_self">Interests</a>
+    <a href="#Background" target="_self">Background</a>
+    <a href="#Projects" target="_self">Projects</a>
 </p>
 <p class="my_descr">
-    I am a master's student in computer science at EPFL, specializing in programming languages and compilers.
-    I have experience in compilation-related projects in the JVM ecosystem (Java, Scala, JVM bytecode).
+    I am a master's student in computer science at EPFL, specializing in programming languages, compilers, and formal methods.
 </p>
 
 <hr class="bold">
 
-<section>
+<section id="Interests">
 <h2>Interests</h2>
 <ul class="interests_list">
-    <li>Programming language design</li>
-    <li>Type systems</li>
-    <li>Static code analysis</li>
-    <li>Compilers</li>
+    <li><b>Programming languages</b>: type systems, language design and implementation</li>
+    <li><b>Compilers</b>: intermediate representations, analyses, (byte)code generation</li>
+    <li><b>Static program analysis</b>: bug detection, verifying compilers</li>
+    <li><b>Applied algorithmics</b>: algorithms design and implementation</li>
 </ul>
 </section>
 
 <hr class="bold">
 
-<section>
+<section id="Background">
+<h2>Background and experience</h2>
+<ul class="background">
+    <li><b>MSc Computer Science</b><br>
+        EPFL, 09.2022-now</li>
+    <li><b>Software engineering internship</b><br>
+        SonarSource, 02-07.2024</li>
+    <li><b>Teaching assistant</b><br>
+        EPFL, Spring'22, Fall'22, Fall'23</li>
+    <li><b>BSc Computer Science</b><br>
+        EPFL, 09.2019-07.2022</li>
+</ul>
+</section>
+
+<hr class="bold">
+
+<section id="Projects">
 <h2>Projects</h2>
 
 <h3 class="project_title">🐍 
-    <a href="https://github.com/ValentinAebi/Rattlesnake" target="_blank">
+    <a href="https://github.com/ValentinAebi/Rattlesnake">
         The Rattlesnake programming language
     </a>
 </h3>
@@ -47,14 +68,14 @@
     <p class="project_descr">
         Simple imperative programming language, compiled to JVM bytecode. My goal was to create a rather minimal programming language that is still
         expressive enough to write non-trivial programs in a convenient way,
-        e.g. <a href="https://github.com/ValentinAebi/Rattlesnake-sudoku-solver" target="_blank">a non-brute-force sudoku solver</a>.
+        e.g. <a href="https://github.com/ValentinAebi/Rattlesnake-sudoku-solver">a non-brute-force sudoku solver</a>.
         The compiler is written in Scala. As part of our final project in the <i>Formal verification</i> class at EPFL, my teammates and I also
-        built a <a href="https://github.com/FV-Rattlesnake-team/Rattlesnake" target="_blank">verifying compiler for Rattlesnake</a>.
+        built a <a href="https://github.com/FV-Rattlesnake-team/Rattlesnake">verifying compiler for Rattlesnake</a>.
     </p>
 </p>
 
 <h3 class="project_title">🐘 
-    <a href="https://github.com/epfl-systemf/JumboTrace" target="_blank">
+    <a href="https://github.com/epfl-systemf/JumboTrace">
         JumboTrace
     </a>
 </h3>
@@ -64,16 +85,16 @@
     <p class="project_descr">
         For my master semester projects, I contributed to SYSTEMF's
         <a href="https://systemf.epfl.ch/research.html#immediate-tracing-for-smoother-debugging-and-code-exploration"
-        target="_blank">Immediate tracing</a>
+       >Immediate tracing</a>
         project, whose goal is to record the evolution of the state of a program and display it as an execution trace.
         My work was focused on implementing such a tool for Java. The tool is named JumboTrace. The first version
-        was based on bytecode instrumentation (<a href="https://infoscience.epfl.ch/record/303503?ln=en" target="_blank">report</a>).
+        was based on bytecode instrumentation (<a href="https://infoscience.epfl.ch/record/303503?ln=en">report</a>).
         The second version consists of a plugin for the Java compiler.
     </p>
 </p>
 
 <h3 class="project_title">🧪 
-    <a href="https://github.com/ValentinAebi/Stoichio-calc" target="_blank">
+    <a href="https://github.com/ValentinAebi/Stoichio-calc">
         Stoichiometry calculator
     </a>
 </h3>
@@ -81,12 +102,13 @@
     <p class="project_type">Personal project</p>
     <p class="tags_list">Keywords: Linear algebra, Chemistry, Rust</p>
     <p class="project_descr">
-        A calculator to balance chemical equations and compute quantities involved in chemical reactions. Written in Rust.
+        A calculator to balance chemical equations and compute quantities involved in chemical reactions, written in Rust. The 
+        balancer uses Gauss's elimination algorithm, adapted to keep all coefficients integer and minimal.
     </p>
 </p>
 
 <h3 class="project_title">👨‍💻 
-    <a href="https://github.com/civp/language-features-a-la-carte" target="_blank">
+    <a href="https://github.com/civp/language-features-a-la-carte">
         Language features à-la-carte
     </a>
 </h3>
@@ -94,14 +116,15 @@
     <p class="project_type">Bachelor project, EPFL Scala center, Spring semester 2022</p>
     <p class="tags_list">Keywords: Static code analysis, Program transformation, Scala</p>
     <p class="project_descr">
-        For my bachelor project, I contributed to the <i>Languages features à-la-carte</i> project. The goal of the project was to build a linter 
-        for Scala to check that some features of the language are not used (typically it could be used to guarantee that programs are functional).
-        I also worked on a prototype tool that transforms (some) imperative Scala programs into equivalent functional programs.
+        The goal of the project was to build a linter for Scala to check that some features of the language are not used 
+        (typically it could be used to guarantee that programs are functional). I also worked on a prototype tool that 
+        transforms (some) imperative Scala programs into equivalent functional programs, the goal being to help students 
+        understand functional programming.
     </p>
 </p>
 
 <h3 class="project_title">📱 
-    <a href="https://github.com/multimatum-Team/multimatum" target="_blank">
+    <a href="https://github.com/multimatum-Team/multimatum">
         Multimatum
     </a>
 </h3>
