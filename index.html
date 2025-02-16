@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<title>Valentin Aebi</title>
 <base target="_blank">
 <meta name="google-site-verification" content="hCHlD2rZ7Yh585gJeW7fqu0fFL8tzH5-Y_6eZ4IxRo0" />
 </head>
@@ -23,7 +24,10 @@
     <a href="#Background" target="_self">Background</a>
     <a href="#Projects" target="_self">Projects</a>
 </p>
-<p class="my_descr">Master's student in computer science at EPFL, currently doing research in type systems for my master's thesis</p>
+<p class="my_descr">
+Computer Science graduate - MSc EPFL, 2025<br>
+Area of specialization: compilers & static analysis
+</p>
 
 <hr class="bold">
 
@@ -32,7 +36,7 @@
 <ul class="interests_list">
     <li><b>Programming languages</b>: language design and implementation, type systems</li>
     <li><b>Compilers</b>: intermediate representations, analyses, (byte)code generation</li>
-    <li><b>Static program analysis</b>: bug detection, verifying compilers</li>
+    <li><b>Static analysis</b>: bug detection, program verifiers, abstract interpretation</li>
     <li><b>Algorithmics</b>: graph theory, scheduling, algorithms engineering</li>
 </ul>
 </section>
@@ -43,12 +47,11 @@
 <h2>Background and experience</h2>
 <ul class="background">
     <li><b>BSc & MSc Computer Science</b><br>
-        EPFL, 09.2019-present<br>
-        Coursework focusing on compilers, programming languages, and algorithmics.<br>
-        Research projects in type systems, compilers, and debugging.</li>
+        EPFL, 09.2019-01.2025<br>
+        MSc thesis: <a href="./resources/MS-thesis-Valentin-Aebi-final.pdf">Implementation of a gradually compartmentalized programming language</a></li>
     <li><b>Software engineering internship</b><br>
         SonarSource, 02-07.2024</li>
-    <li><b>Teaching assistant</b><br>
+    <li><b>Student teaching assistant</b><br>
         EPFL, Spring'22 (OOP), Fall'22 (compilers), Fall'23 (formal methods)</li>
 </ul>
 </section>
@@ -56,149 +59,91 @@
 <hr class="bold">
 
 <section id="Projects">
-<h2>Projects</h2>
+<h2>Selected projects</h2>
 
 <details>
-<summary class="project_title">&nbsp; Immediate tracing for Java programs &nbsp;
-    <a href="https://github.com/epfl-systemf/JumboTrace"><i class="fa fa-github" style="font-size: larger;"></i></a>
-</summary>
+<summary class="project_title">&nbsp; The Rattlesnake programming language &nbsp;</summary>
+<p class="project">
+    <p class="tags_list">Keywords: Language design, Type system, Compiler, JVM bytecode, Program verification</p>
+    <p class="project_descr">
+        Simple experimental programming language. I initially designed it as a personal project to learn about compilers, 
+        and then used it for several experimental projects. Most notably:
+        <ul>
+        <li>
+        An implementation of <b>gradual object capabilities</b> (as part of my master's thesis) <br>
+        [<a href="https://github.com/ValentinAebi/Rattlesnake/tree/rattlesnake-v0.2-gradient">code</a>]
+        [<a href="./resources/MS-thesis-Valentin-Aebi-final.pdf">thesis</a>]
+        [<a href="https://github.com/ValentinAebi/Rattlesnake/blob/rattlesnake-v0.2-gradient/grattlesnake-lang-doc.md">language documentation</a>]
+        [<a href="https://github.com/ValentinAebi/sudoku-case-study">example program</a>]
+        </li>
+        <br>
+        <li>
+        A <b>program verifier</b> for an earlier version of Rattlesnake (ft. my project teammates) <br>
+        [<a href="https://github.com/FV-Rattlesnake-team/Rattlesnake">code</a>]
+        [<a href="https://github.com/FV-Rattlesnake-team/Rattlesnake/blob/main/Report.pdf">report</a>]
+        [<a href="https://github.com/FV-Rattlesnake-team/Rattlesnake/blob/main/Slides.pdf">slides</a>]
+        </li>
+        </ul>
+    </p>
+</p>
+</details>
+<br>
+
+<details>
+<summary class="project_title">&nbsp; Immediate tracing for Java programs &nbsp;</summary>
 <p class="project">
     <p class="project_type">Research project, <a href="https://systemf.epfl.ch/">EPFL SYSTEMF laboratory</a>, 2023-2024</p>
     <p class="tags_list">Keywords: Java compiler plugin, JVM bytecode, Debuggers, Program tracing</p>
     <p class="project_descr">
-        For my master semester projects, I contributed to SYSTEMF's
+        I contributed to SYSTEMF's
         <a href="https://systemf.epfl.ch/research.html#immediate-tracing-for-smoother-debugging-and-code-exploration"
         >Immediate tracing</a>
         project, whose goal is to record the evolution of the state of a program and display it as an execution trace.
         My work was focused on implementing such a tool for Java. The first version
-        was based on bytecode instrumentation (<a href="https://infoscience.epfl.ch/record/303503?ln=en">report</a>).
-        The second version consists of a plugin for the Java compiler.
+        was based on bytecode instrumentation. The second version consists of a plugin for the Java compiler.<br>
+        [<a href="https://github.com/epfl-systemf/JumboTrace">code</a>]
+        [<a href="https://infoscience.epfl.ch/record/303503?ln=en">report</a>]
     </p>
 </p>
 </details>
 <br>
 
 <details>
-<summary class="project_title">&nbsp; The Rattlesnake programming language &nbsp;
-    <a href="https://github.com/ValentinAebi/Rattlesnake"><i class="fa fa-github" style="font-size: larger;"></i></a>
-</summary>
+<summary class="project_title">&nbsp; Symbolic execution engine for Java bytecode &nbsp;</summary>
 <p class="project">
-    <p class="project_type">Personal project, started in 2022</p>
-    <p class="tags_list">Keywords: Language design, Compiler, JVM bytecode, Scala</p>
+    <p class="tags_list">Keywords: Bug detection, Z3 SMT solver, JVM bytecode</p>
     <p class="project_descr">
-        Simple imperative programming language, compiled to JVM bytecode by a compiler written in Scala. It started at the end of my bachelor's 
-        as a mean for me to learn more about compilers, and evolved into a platform for small experiments in language design. The language 
-        is small, but provides enough features to write meaningful programs of several hundreds of lines of code (see the sudoku solver in this 
-        list). Its features include arrays, nominal structures and interfaces, smart casts, and (shallow) mutability control. Its main 
-        limitations are the lack of IOs (the only one being prints to the console), the absence of a module system (all functions are top-level),
-        the non-interoperability with other JVM-based languages, and the absence of closures and higher-order functions.
+        A prototype bug detection engine for Java-based languages, written in Kotlin. It uses symbolic execution to detect errors like null 
+        dereferences, out-of-bound array accesses, and divisions by zero. In its current state, the engine is able to perform intra-procedural 
+        analysis and to generate methods summaries. The actual usage of method summaries for inter-procedural analysis is however not (yet) 
+        implemented. <br>
+        [<a href="https://github.com/ValentinAebi/Capybara">code</a>]
     </p>
 </p>
 </details>
 <br>
 
 <details>
-<summary class="project_title">&nbsp; Symbolic execution engine for Java bytecode &nbsp;
-    <a href="https://github.com/ValentinAebi/Capybara"><i class="fa fa-github" style="font-size: larger;"></i></a>
-</summary>
+<summary class="project_title">&nbsp; Stoichiometry calculator &nbsp;</summary>
 <p class="project">
-    <p class="project_type">Personal project, started in 2024</p>
-    <p class="tags_list">Keywords: Bug detection, Z3 SMT solver, JVM bytecode, Kotlin</p>
-    <p class="project_descr">
-        A bug detection engine for Java-based languages, written in Kotlin. It uses symbolic execution to compute feasible 
-        paths in methods and detect errors like null dereferences, out-of-bound array accesses, and divisions by zero. It is currently an early 
-        prototype due to lack of time to work on it. In its current state, the engine is able to perform intra-procedural analysis and to generate 
-        methods summaries. The actual usage of method summaries for inter-procedural analysis is however not (yet) implemented.
-    </p>
-</p>
-</details>
-<br>
-
-<details>
-<summary class="project_title">&nbsp; Verifying compiler for Rattlesnake &nbsp;
-    <a href="https://github.com/FV-Rattlesnake-team/Rattlesnake"><i class="fa fa-github" style="font-size: larger;"></i></a>
-</summary>
-<p class="project">
-    <p class="project_type">Course project, Fall semester 2022</p>
-    <p class="tags_list">Keyword: Program verification, Formal methods, Z3 SMT solver, Scala</p>
-    <p class="project_descr">
-        As part of EPFL's <a href="https://edu.epfl.ch/coursebook/en/formal-verification-CS-550" style="font-style: italic;">Formal verification</a> class, we had to 
-        complete a project related to formal methods. My teammates and I chose to implement a verifying compiler for a subset of 
-        Rattlesnake, a language that I had created as a free-time project. Our verifier is able to check Rattlesnake programs that 
-        use integers and booleans. We have been able to prove simple properties like the absence of out-of-bounds errors in array 
-        iterations. Due to time constraints, we had to limit ourselves to sound approximations about values loaded from arrays and structures.
-    </p>
-</p>
-</details>
-<br>
-
-<details>
-<summary class="project_title">&nbsp; Stoichiometry calculator &nbsp;
-    <a href="https://github.com/ValentinAebi/Stoichio-calc"><i class="fa fa-github" style="font-size: larger;"></i></a>
-</summary>
-<p class="project">
-    <p class="project_type">Personal project, 2022</p>
     <p class="tags_list">Keywords: Linear algebra, Chemistry, Rust</p>
     <p class="project_descr">
         A calculator to balance chemical equations and compute quantities involved in chemical reactions, written in Rust. The 
         balancer maps stoichiometric equations to matrices and uses Gauss's elimination algorithm, adapted to keep all 
-        coefficients integer and minimal.
+        coefficients integer and minimal.<br>
+        [<a href="https://github.com/ValentinAebi/Stoichio-calc">code</a>]
     </p>
 </p>
 </details>
 <br>
 
-<details>
-<summary class="project_title">&nbsp; "Intelligent" sudoku solver &nbsp;
-    <a href="https://github.com/ValentinAebi/Rattlesnake-sudoku-solver"><i class="fa fa-github" style="font-size: larger;"></i></a>
-</summary>
-<p class="project">
-    <p class="project_type">Personal project, 2023</p>
-    <p class="tags_list">Keyword: Automated reasoning, Sudoku, Constraints satisfaction</p>
-    <p class="project_descr">
-        An "intelligent" sudoku solver, that implements reasoning rules and heuristics to limit the use of backtracking. This 
-        solver is written in Rattlesnake, serving as the largest example program for this toy language.
-    </p>
-</p>
-<br>
-</details>
-<br>
-
-<details>
-<summary class="project_title">&nbsp; Language features à-la-carte &nbsp;
-    <a href="https://github.com/civp/language-features-a-la-carte"><i class="fa fa-github" style="font-size: larger;"></i></a>
-</summary>
-<p class="project">
-    <p class="project_type">Bachelor project, <a href="https://scala.epfl.ch/">EPFL Scala center</a>, Spring semester 2022</p>
-    <p class="tags_list">Keywords: Static code analysis, Program transformation, Scala</p>
-    <p class="project_descr">
-        The goal of the project was to build a linter for Scala to check that some features of the language are not used 
-        (typically it could be used to guarantee that programs are functional). I also worked on a prototype tool that 
-        transforms (some) imperative Scala programs into equivalent functional programs, the goal being to help students 
-        understand functional programming.
-    </p>
-</p>
-</details>
-<br>
-
-<details>
-<summary class="project_title">&nbsp; Deadlines manager &nbsp;
-    <a href="https://github.com/multimatum-Team/multimatum"><i class="fa fa-github" style="font-size: larger;"></i></a>
-</summary>
-<p class="project">
-    <p class="project_type">Team project for the <i>Software development project</i> class, EPFL, Spring semester 2022</p>
-    <p class="tags_list">Keywords: Android, Kotlin</p>
-    <p class="project_descr">
-        My teammates and I created Multimatum, an Android app to manage deadlines.
-    </p>
-</p>
-</details>
+More projects can be found on my <a href="https://github.com/ValentinAebi">GitHub</a>.
 
 </section>
 
 <br><br>
 <hr>
-<p class="footer">Last updated: 06.12.2024</p>
+<p class="footer">Last updated: 16.02.2025</p>
 <br>
 
 </body>
