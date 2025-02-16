@@ -12,4 +12,4 @@ for i, c in enumerate(email):
 letters = [(e, letters[e]) for e in letters]
 random.shuffle(letters)
 
-print(letters)
+print(str(letters).replace('(', '[').replace(')', ']'))

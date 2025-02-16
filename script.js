@@ -1,6 +1,6 @@
 
-let letters = [['l', [2, 17]], ['n', [4, 7]], ['c', [19]], ['t', [5]], ['h', [20]], ['f', [16]], ['v', [0]], ['a', [1, 9]],
-                ['i', [6, 12]], ['.', [8, 18]], ['e', [3, 10, 14]], ['b', [11]], ['@', [13]], ['p', [15]]];
+let letters = [['l', [11]], ['o', [14]], ['a', [1, 2, 9]], ['m', [8, 15]], ['c', [13]], ['g', [7]], ['@', [6]], ['v', [0]],
+               ['i', [5, 10]], ['b', [4]], ['e', [3]], ['.', [12]]];
 
 function getLetter(idx){
     for (e of letters){
@@ -19,7 +19,8 @@ function length(){
 }
 
 let email = "mailto:";
-for (let i = 0; i < length(); i += 1){
+let len = length();
+for (let i = 0; i < len; i += 1){
     email += getLetter(i);
 }
 
