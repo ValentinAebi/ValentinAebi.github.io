@@ -40,11 +40,6 @@ p.contact_logos {
     font-size: x-large;
 }
 
-p.table_of_contents {
-    text-align: center;
-    display: none;
-}
-
 p.table_of_contents > a {
     text-decoration:none;
     color:black;
@@ -53,9 +48,10 @@ p.table_of_contents > a {
     margin-right: 5mm;
 }
 
-ul.interests_list > li {
-    text-align: left;
-    margin-bottom: 2mm;
+p.interests {
+    text-align: justify;
+    margin: auto;
+    max-width: 15cm;
 }
 
 ul.background > li {
