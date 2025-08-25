@@ -28,6 +28,11 @@ a {
     color: black;
 }
 
+section.cvsection {
+    border-width: 1px;
+    border-style: dashed;
+}
+
 p.my_descr {
     margin-bottom: 7mm;
     text-align: center;
@@ -49,6 +54,12 @@ p.table_of_contents > a {
 }
 
 p.interests {
+    text-align: left;
+    margin: auto;
+    max-width: 15cm;
+}
+
+li.interest_item {
     text-align: justify;
     margin: auto;
     max-width: 15cm;
@@ -56,10 +67,12 @@ p.interests {
 
 ul.background > li {
     margin-bottom: 1mm;
+    margin-right: 3mm;
 }
 
 summary.project_title {
     font-weight: 600;
+    margin-left: 3mm;
 }
 
 p.project {
@@ -68,16 +81,25 @@ p.project {
 
 p.project_type {
     margin-top: -2mm;
+    margin-left: 3mm;
 }
 
 p.tags_list {
     margin-top: -4mm;
     font-style: italic;
+    margin-left: 3mm;
 }
 
 p.project_descr {
     margin-top: -2mm;
     text-align: justify;
+    margin-left: 3mm;
+    margin-right: 3mm;
+}
+
+p.project_note {
+    margin-left: 3mm;
+    margin-bottom: -2mm;
 }
 
 hr.bold {
