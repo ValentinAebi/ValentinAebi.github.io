@@ -10,7 +10,7 @@
 <meta name="google-site-verification" content="hCHlD2rZ7Yh585gJeW7fqu0fFL8tzH5-Y_6eZ4IxRo0" />
 </head>
 
-<body>
+<body class="index_page">
 
 <br>
 <h1>Valentin Aebi</h1>
@@ -21,111 +21,48 @@
 </p>
 
 <p class="my_descr">
-Computer Science graduate - MSc EPFL, 2025
+PhD student in informatics @ <a href="https://si.usi.ch/">Software Institute</a><br>
+USI Università della Svizzera italiana
 <br><br>
-<a href="./cv.html" target="_self" style="font-size: large;">Background and experience</a>
+<a href="./cv.html" target="_self" class="page_button">Background and experience</a> 
+<a href="./rattlesnake.html" target="_self" class="page_button">The Rattlesnake language</a>
 </p>
 
 <br>
 
-<section id="Interests" class="cvsection">
-<h2>Interests</h2>
-<p class="interests">I am mainly interested in <i>programming languages</i>. More specifically:</p>
-<ul>
-<li class="interest_item" style="margin-top: -2mm;">Design and implementation of programming languages and type systems;</li>
-<br>
-<li class="interest_item" style="margin-top: -4mm;">Static program analysis for bug detection, automated verification, and compiler optimizations.</li>
-</ul>
+<section id="General" class="general">
+
+<p><b>Research interests</b>: I would like to make formal methods as accessible as possible to 
+non-specialist developers. I am thus mainly interested in lightweight formal methods, 
+especially type systems and the design of programming languages that integrate them, as well as 
+automated static analysis. I am also interested in compilers, especially their program 
+analysis phases.</p>
+
+<p><b>Academic projects</b>: I am the designer of 
+<a href="./rattlesnake.html" target="_self" >Rattlesnake</a>, an experimental 
+programming language which I equipped with a type system for gradual object capabilities 
+as part of my <a href="./resources/ms-thesis.pdf">master's thesis</a>.
+During my master's, I also did some work on program tracing in Java, designing 
+bytecode instrumentations and a compiler plugin to improve debugging and code exploration 
+(<a href="https://github.com/epfl-systemf/JumboTrace">code</a>,
+<a href="https://infoscience.epfl.ch/record/303503?ln=en">report</a>).</p>
+
+<p><b>Other projects</b>: Apart from my interests listed above, I also enjoy algorithmics 
+and automated reasoning. My projects record includes projects related to 
+<a href="https://github.com/ValentinAebi/Capybara">symbolic execution</a>, balancing of 
+<a href="https://github.com/ValentinAebi/Stoichio-calc">chemical 
+equations</a>, <a href="https://github.com/ValentinAebi/sudoku-case-study">sudoku solvers</a>, 
+and visualizations of 
+<a href="https://github.com/ValentinAebi/Graphs-algos-visualizer">graph algorithms</a>, 
+<a href="https://github.com/ValentinAebi/Finite-Automaton">DFA/NFAs</a>, and 
+<a href="https://github.com/ValentinAebi/JavaInteractivePathfinder">pathfinding</a>.</p>
+
+<p class="project_note">Most of my projects can be found on my <a href="https://github.com/ValentinAebi">GitHub</a>.</p>
 <br>
 </section>
 
-<br>
-
-<section id="Projects" class="cvsection">
-<h2>Selected projects</h2>
-
-<details>
-<summary class="project_title">&nbsp; The Rattlesnake programming language &nbsp;</summary>
-<p class="project">
-    <p class="tags_list">Keywords: Language design, Type system, Compiler, JVM bytecode, Verification, SMT solver</p>
-    <p class="project_descr">
-        Simple experimental programming language. I initially designed it as a personal project to learn about compilers, 
-        and then used it for several experimental projects. Most notably:
-        <ul>
-        <li>
-        An implementation of <b>gradual object capabilities</b> (as part of my master's thesis) <br>
-        [<a href="https://github.com/ValentinAebi/Rattlesnake/tree/rattlesnake-v0.2-gradient">code</a>]
-        [<a href="./resources/ms-thesis.pdf">thesis</a>]
-        [<a href="https://github.com/ValentinAebi/Rattlesnake/blob/rattlesnake-v0.2-gradient/grattlesnake-lang-doc.md">language documentation</a>]
-        [<a href="https://github.com/ValentinAebi/sudoku-case-study">example program</a>]
-        </li>
-        <br>
-        <li>
-        A <b>program verifier</b> for an earlier version of Rattlesnake (ft. my project teammates) <br>
-        [<a href="https://github.com/FV-Rattlesnake-team/Rattlesnake">code</a>]
-        [<a href="https://github.com/FV-Rattlesnake-team/Rattlesnake/blob/main/Report.pdf">report</a>]
-        [<a href="https://github.com/FV-Rattlesnake-team/Rattlesnake/blob/main/Slides.pdf">slides</a>]
-        </li>
-        </ul>
-    </p>
-</p>
-</details>
-<br>
-
-<details>
-<summary class="project_title">&nbsp; Immediate tracing for Java programs &nbsp;</summary>
-<p class="project">
-    <p class="project_type">Research project, <a href="https://systemf.epfl.ch/">EPFL SYSTEMF laboratory</a>, 2023-2024</p>
-    <p class="tags_list">Keywords: Java compiler plugin, JVM bytecode, Debugger, Program tracing</p>
-    <p class="project_descr">
-        I contributed to SYSTEMF's
-        <a href="https://systemf.epfl.ch/research.html#immediate-tracing-for-smoother-debugging-and-code-exploration"
-        >Immediate tracing</a>
-        project, whose goal is to record the evolution of the state of a program and display it as an execution trace.
-        My work was focused on implementing such a tool for Java. The first version
-        was based on bytecode instrumentation. The second version consists of a plugin for the Java compiler.<br>
-        [<a href="https://github.com/epfl-systemf/JumboTrace">code</a>]
-        [<a href="https://infoscience.epfl.ch/record/303503?ln=en">report</a>]
-    </p>
-</p>
-</details>
-<br>
-
-<details>
-<summary class="project_title">&nbsp; Symbolic execution engine for Java bytecode &nbsp;</summary>
-<p class="project">
-    <p class="tags_list">Keywords: Static analysis, Bug detection, Control-flow analysis, SMT solver, JVM bytecode</p>
-    <p class="project_descr">
-        A prototype bug detection engine for Java-based languages, written in Kotlin. It uses symbolic execution to detect errors like null 
-        dereferences, out-of-bound array accesses, and divisions by zero. In its current state, the engine is able to perform intra-procedural 
-        analysis and to generate methods summaries. The actual usage of method summaries for inter-procedural analysis is however not (yet) 
-        implemented. <br>
-        [<a href="https://github.com/ValentinAebi/Capybara">code</a>]
-    </p>
-</p>
-</details>
-<br>
-
-<details>
-<summary class="project_title">&nbsp; Stoichiometry calculator &nbsp;</summary>
-<p class="project">
-    <p class="tags_list">Keywords: Linear algebra, Chemistry, Rust</p>
-    <p class="project_descr">
-        A calculator to balance chemical equations and compute quantities involved in chemical reactions, written in Rust. The 
-        balancer maps stoichiometric equations to matrices and uses Gauss's elimination algorithm, adapted to keep all 
-        coefficients integer and minimal.<br>
-        [<a href="https://github.com/ValentinAebi/Stoichio-calc">code</a>]
-    </p>
-</p>
-</details>
-<br>
-
-<p class="project_note">More projects can be found on my <a href="https://github.com/ValentinAebi">GitHub</a>.</p>
-
-<br>
-</section>
-
-<p class="footer">Last updated: 25.08.2025</p>
+<hr>
+<p class="footer">Last updated: 01.11.2025</p>
 <br>
 
 </body>

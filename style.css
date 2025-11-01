@@ -11,6 +11,15 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body.index_page {
+    max-width: 140mm;
+    margin: auto;
+}
+
+section.side_page {
+    text-align: justify;
+}
+
 h1 {
     text-align: center;
 }
@@ -26,18 +35,62 @@ h3 {
 
 a {
     color: black;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
-section.cvsection {
+.flex_cols_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.right_column {
+    margin-top: 2mm;
+}
+
+@media only screen and (min-width: 600px) {
+    .flex_cols_container {
+        flex-direction: row;
+    }
+    .left_column {
+        width: 50%;
+        margin-right: 4mm;
+    }
+    .right_column {
+        width: 50%;
+        margin-left: 4mm;
+        margin-top: auto;
+    }
+}
+
+.dash_boxed {
     border-width: 1px;
     border-style: dashed;
+}
+
+.dash_boxed > p {
+    margin: 3mm;
+}
+
+section.general {
+    text-align: justify;
 }
 
 p.my_descr {
     margin-bottom: 7mm;
     text-align: center;
-    max-width: 10cm;
     margin: auto;
+}
+
+a.page_button {
+    font-size: medium;
+    text-decoration: none;
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 3px;
+    margin-left: 5mm;
+    margin-right: 5mm;
 }
 
 p.contact_logos {
@@ -55,14 +108,12 @@ p.table_of_contents > a {
 
 p.interests {
     text-align: left;
-    margin: auto;
-    max-width: 15cm;
+    margin-left: 3mm;
 }
 
 li.interest_item {
     text-align: justify;
-    margin: auto;
-    max-width: 15cm;
+    margin-right: 3mm;
 }
 
 ul.background > li {
@@ -98,7 +149,6 @@ p.project_descr {
 }
 
 p.project_note {
-    margin-left: 3mm;
     margin-bottom: -2mm;
 }
 
@@ -112,7 +162,18 @@ i.fa {
     color: black;
 }
 
-p.footer {
+pre.snippet {
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+p.header {
     font-size: small;
+    text-align: left;
+}
+
+p.footer {
+    font-size: smaller;
     text-align: right;
+    margin-top: -1mm;
 }

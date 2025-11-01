@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Valentin Aebi - Rattlesnake</title>
+<base target="_blank">
+</head>
+
+<body>
+
+<p class="header"><a href="./index.html" target="_self" style="text-decoration: none;">⬅️ Main page</a></p>
+
+<h1>The Rattlesnake programming language</h1>
+
+<section id="Rattlesnake" class="side_page">
+<div class="flex_cols_container">
+    <div class="left_column">
+        Rattlesnake is an experimental programming language that explores topics like object 
+        capabilities, capture checking, verification, and mutability control.
+        It is compiled to JVM bytecode and the compiler is written in Scala.
+        It is primarily an imperative language, but it also includes ideas from other paradigms 
+        (e.g. object-oriented).
+    </div>
+    <div class="right_column">
+        I started developing Rattlesnake in 2022, initially as a personal 
+        project to learn about compilers and programming language design.
+        I later used it in several academic projects, including a prototype 
+        implementation of gradual object capabilities (as part of my master's thesis), 
+        and a program verifier (as a course project, together with my project teammates).
+    </div>
+</div>
+<br>
+
+🐍 My master's thesis: 
+[<a href="./resources/ms-thesis.pdf">thesis</a>]
+[<a href="https://github.com/ValentinAebi/Rattlesnake/tree/rattlesnake-v0.2-gradient">code</a>]
+[<a href="https://github.com/ValentinAebi/sudoku-case-study">example program</a>]
+[<a href="https://github.com/ValentinAebi/Rattlesnake/blob/rattlesnake-v0.2-gradient/grattlesnake-lang-doc.md">language documentation</a>]
+<br>
+🐍 Program verifier: 
+[<a href="https://github.com/FV-Rattlesnake-team/Rattlesnake">code</a>]
+[<a href="https://github.com/FV-Rattlesnake-team/Rattlesnake/blob/main/Report.pdf">report</a>]
+[<a href="https://github.com/FV-Rattlesnake-team/Rattlesnake/blob/main/Slides.pdf">slides</a>]
+
+
+<p style="font-style: italic; margin-bottom: -2mm;">An example code snippet in Grattlesnake (the version with gradual object capabilities):</p>
+<pre class="snippet">
+<code>
+ datatype IntList
+ struct IntCons : IntList { head: Int, tail: IntList }
+ struct Nil : IntList
+
+ module Stringifier(sep: String, #package Logger, device console, device fs) {
+ 
+     fn printList(ls: IntList) {
+         if ls is IntCons {
+             console.print(ls.head as String);
+             if ls.tail is IntCons {
+                 console.print(me.sep);
+             };
+             printList!(ls.tail);
+         } else {
+             enclosed {fs} {
+                 Logger.log("printed a list");
+             }
+         }
+     }
+ 
+ }
+</code>
+</pre>
+</section>
+
+<br>
+
+</body>
+</html>
