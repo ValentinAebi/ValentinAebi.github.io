@@ -44,22 +44,12 @@ a {
     flex-direction: column;
 }
 
-.right_column {
-    margin-top: 2mm;
-}
-
 @media only screen and (min-width: 600px) {
     .flex_cols_container {
         flex-direction: row;
     }
-    .left_column {
-        width: 50%;
-        margin-right: 4mm;
-    }
-    .right_column {
-        width: 50%;
-        margin-left: 4mm;
-        margin-top: auto;
+    .column {
+        width: 33%;
     }
 }
 
@@ -167,6 +157,11 @@ i.fa {
 pre.snippet {
     background-color: whitesmoke;
     border: 1px solid black;
+}
+
+p.paper_abstract {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 p.header {

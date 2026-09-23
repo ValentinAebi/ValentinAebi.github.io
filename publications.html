@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Valentin Aebi - Publications</title>
+<base target="_blank">
+</head>
+
+<body>
+
+<p class="header"><a href="./index.html" target="_self" style="text-decoration: none;">⬅️ Main page</a></p>
+
+<h2>Publications</h2>
+
+<div class="dash_boxed">
+<p><b>Practical range refinement types with inference</b><br>
+Valentin Aebi and Carlo A. Furia - SEFM 2026<br>
+[<a href="./resources/sefm2026-ranger.pdf">PDF</a>]
+[<a href="https://arxiv.org/abs/2607.00824">arXiv</a>]
+[<a href="https://github.com/ValentinAebi/licorne-lang">implementation</a>]
+[<a href="https://doi.org/10.6084/m9.figshare.33022760">replication package</a>]
+</p>
+<p class="paper_abstract">
+    We introduce <i>Ranger</i>, a type system oriented towards lightweight verification using refinement types 
+    and dependent integer range types. <i>Ranger</i>'s distinctive feature is its low annotation overhead 
+    thanks to bidirectional type inference supported by specialized heuristics for refinements inference. 
+    We implemented <i>Ranger</i> as part of the type system of the <a href="https://github.com/ValentinAebi/licorne-lang">Licorne</a> 
+    programming language, and show how its structured SSA intermediate representation 
+    helps supporting refinements on local variables updated in loops. We evaluate <i>Ranger</i> by comparing 
+    its expressiveness and annotation overhead to other lightweight verification frameworks and to the 
+    Scala language.
+</p>
+</div>
+
+
+</body>
+</html>
